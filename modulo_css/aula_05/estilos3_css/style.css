@@ -1,0 +1,9 @@
+header.estilo1 > p{
+        color:red;
+}
+header .estilo1 p{
+        color:red;
+}
+p{
+        color:orange !important;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>projeto</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <style class="type/css">
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        /*classes auxiliares*/
+        .container{
+            max-width: 960px;
+            margin:0 auto;
+            padding:0 2%;
+        }
+        .clear{
+            clear: both;
+        }
+        .w50{
+            float:left;
+            width: 50%;
+            padding:0 10px;
+
+        }
+        .w100{
+            float:left;
+            width:100%;
+            padding:0 10px;
+        }
+        /*estilo proprio*/
+        body{
+            background:rgb(225,225,255);
+        }
+        h2{
+            text-align: center;
+            color:blue;
+            padding: 10px 0;
+            font-size: 24px;
+            border-bottom: 2px solid blue;
+            text-transform: uppercase;
+        }
+        .form-group label{
+            display: block;
+            margin: 8px 0;
+            color: #646464;
+        }
+        .form-group input[type=text]{
+            width: 100%;
+            padding-left: 8px;
+            margin-top:6px;
+            height: 40px;
+            border: 1px solid #ccc;
+        }
+        .form-group input[type=submit]{
+            width: 140px;
+            height: 40px;
+            background: blue;
+            color:white;
+            margin-top: 10px;
+            border: 0;
+            cursor: pointer;
+        }
+        .form-group textarea{
+            width: 100%;
+            height: 120px;
+            border:1px solid #ccc;
+            padding: 10px;
+        }
+        @media screen and(max-width: 790px) {
+            .w50{width: 100%;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Entre em Contato!</h2>
+            <form>
+                <div class="w50 right">
+                    <div class="form-group">
+                        <label>nome</label>
+                        <input type="text" name="nome">
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label>sobrenome</label>
+                        <input type="text" name="nome">
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label>celular</label>
+                        <input type="text" name="nome">
+                    </div>
+                </div>
+                <div class="w50">
+                    <div class="form-group">
+                        <label>telefone</label>
+                        <input type="text" name="nome">
+                    </div>
+                </div>
+                <div class="w100">
+                    <div class="form-group">
+                        <label>mensagem</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="w100">
+                    <div class="form-group">
+                        <input type="submit" name="ação" value="enviar!">
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </form>
+
+        </div>
+
+    </body>
